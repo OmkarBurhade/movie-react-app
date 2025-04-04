@@ -22,8 +22,8 @@ const TopNav = () => {
   }, [query])
 
   return (
-    <div className=' z-10 my-2 mx-2 w-full sm:w-96 absolute top-9 -right-2 sm:top-0 sm:right-0'>
-      <div className='rounded w-full  bg-zinc-100 focus-within:bg-zinc-200 '>
+    <div className='z-10 my-2 mx-2 w-full px-5 sm:px-0 sm:w-96 absolute top-10 -right-2 sm:top-0 sm:right-0'>
+      <div className='rounded w-full bg-zinc-100 focus-within:bg-zinc-200'>
         <div className='flex items-center justify-center px-3'>
 
           <label htmlFor="search" className='cursor-pointer'><i className="text-zinc-600 text-2xl ri-search-2-line leading-none"></i></label>
