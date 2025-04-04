@@ -7,7 +7,6 @@ const SideNave = () => {
     setOpenMenue(!openMenue)
   }
 
-  console.log(openMenue);
 
   return (
     <>
@@ -16,12 +15,12 @@ const SideNave = () => {
 
       {!openMenue ? (
         <div className='p-4 fixed left-0 top-0 z-40 bg-[#1F1E24] lg:w-[20%] h-screen lg:sticky lg:top-10 shadow '>
-          <div className='mt-10'>
+          <div className='mt-10 lg:mt-0'>
             <h1 className='text-2xl text-white font-bold'>
               <i className="ri-tv-fill text-[#6556CD] mr-2"></i> <span>anymovie</span>
             </h1>
             <nav className='flex flex-col gap-3 text-zinc-400 text-lg'>
-              <h1 className='text-white font-semibold text-xl mt-5 sm:mt-10 mb-5'>
+              <h1 className='text-white font-semibold text-xl mt-5 sm:mt-10 mb-3'>
                 New Feed
               </h1>
               <Link to="/trending" className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md px-4 py-2'><i className="ri-fire-fill mr-2"></i>Trending</Link>
@@ -34,7 +33,7 @@ const SideNave = () => {
             <hr className='border-none h-[1px] bg-zinc-400 mt-5' />
 
             <nav className='flex flex-col gap-3 text-zinc-400 text-lg'>
-              <h1 className='text-white font-semibold text-xl mt-8 mb-5'>
+              <h1 className='text-white font-semibold text-xl mt-8 mb-3'>
                 Website Information
               </h1>
               <Link to={'/about'} className='hover:bg-[#6556CD] hover:text-white duration-300 rounded-md px-4 py-2'><i className="ri-information-2-fill mr-2"></i>About </Link>
