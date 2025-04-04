@@ -12,10 +12,10 @@ const Header = ({ data }) => {
                     position: "relative",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
-                }} className='w-full h-[60vh] flex flex-col justify-end items-start p-14'>
+                }} className='w-full h-[60vh] flex flex-col justify-center sm:justify-end items-start p-8 sm:p-14'>
 
-                <h1 className='text-5xl font-bold text-white w-[70%]'>{data.name || data.title || data.original_name || data.original_title}</h1>
-                <p className='text-white w-[70%] mt-3'>{data?.overview ? (<>{data?.overview?.slice(0, 200)}... <Link to={`/${data?.media_type}/details/${data.id}`} className='text-blue-400'>more.</Link></>) : ("")} </p>
+                <h1 className='text-5xl font-bold text-white w-full sm:w-[70%]'>{data.name || data.title || data.original_name || data.original_title}</h1>
+                <p className='text-white w-full sm:w-[70%] mt-3'>{data?.overview ? (<>{data?.overview?.slice(0, 200)}... <Link to={`/${data?.media_type}/details/${data.id}`} className='text-blue-400'>more.</Link></>) : ("")} </p>
                 <p className='text-white mt-3'>
                     <i className="text-yellow-300 ri-megaphone-fill"></i> {data.first_air_date || data.release_date} &nbsp;
                     <i className="text-yellow-300 ri-album-fill"></i> {data?.media_type?.toUpperCase()}

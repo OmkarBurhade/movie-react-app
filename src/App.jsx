@@ -12,11 +12,13 @@ import Persondetails from './components/Persondetails'
 import Trailer from './components/partials/Trailer'
 import Playmovie from './components/partials/Playmovie'
 import PageNotfound from './components/partials/PageNotfound'
+import About from './components/About'
 const App = () => {
   return (
     <div className=' flex'>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
         <Route path='/trending' element={<Trending />} />
         <Route path='/popular' element={<Popular />} />
         <Route path='/movie' element={<Movie />} />

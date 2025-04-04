@@ -14,6 +14,7 @@ const Home = () => {
     const [category, setCategory] = useState("tv")
     const [trendingData, setTrendingData] = useState(["tv", "movie"]);
     const randomIndex = Math.floor(Math.random() * trendingData.length); // Generates 0 or 1
+    
 
     // getting Header data
     const GetHeaderWallpaper = async () => {
@@ -49,8 +50,8 @@ const Home = () => {
 
     return wallpaper && trending ? (
         <>
-            <SideNave />
-            <div className='w-[92%] bg-[#1F1E24] h-auto overflow-hidden relative'>
+            <SideNave/>
+            <div className='w-full bg-[#1F1E24] h-auto overflow-hidden relative'>
                 <TopNav />
                 <Header data={wallpaper} />
                 <div className='mb-5 px-8 pt-5 flex justify-between'>
